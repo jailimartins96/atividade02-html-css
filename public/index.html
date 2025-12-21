@@ -4,25 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Check-in</title>
-    <link rel="stylesheet" href="../styles.css">
-
-</head>
-<video autoplay muted loop id="bg-video">
-    <source src="img/treinovideo.mp4" type="video/mp4">
+    <link rel="stylesheet" href="styles.css">
+ 
    
-</video>
+  </head>
+  <body>
+    <nav>
+        <h2>TrainnerFit</h2>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
 
-<div class="overlay"></div>
+        </div>
 
-<main class="container">
-    <h1> Check-in NewAcademy</h1>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 
-    <input type="text" id="inputCode" placeholder="entre com o seu código" maxlength="6" />
-    <button id="checkBtn">Fazer meu check-in</button>
+   
 
-<audio id="bg-audio">
-    <source src="sport-is-life-300572.mp3" type="audio/mpeg">
-</audio>
-</main>
+
+
+    <video autoplay muted loop playsinline id="bgvideo">
+        <source src="../media/treinovideo.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <div class="overlay"></div>
+
+    <main class="container">
+        <h1> Check-in TrainnerFit</h1>
+
+        <input type="text" id="inputCode" placeholder="entre com o seu código" maxlength="6" />
+        <button id="checkBtn">Fazer meu check-in</button>
+        <button id="audioBtn">Tocar Áudio 🎵</button>
+
+
+        <audio id="bgAudio" preload="auto">
+            <source src="../media/sport-is-life-300572.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+
 </body>
+
+<script src="app.js"></script>
 </html>
